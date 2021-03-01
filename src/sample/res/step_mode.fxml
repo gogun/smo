@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="1000.0" prefWidth="1000.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.StepModeController">
+
+    <TableView fx:id="bufferTable" maxHeight="500.0" maxWidth="600.0">
+        <columns>
+            <TableColumn fx:id="name" prefWidth="86" text="Имя" />
+            <TableColumn fx:id="pointer1" prefWidth="86" text="Указатель 1" />
+            <TableColumn fx:id="elem" prefWidth="86" text="Элемент" />
+            <TableColumn fx:id="pointer2" prefWidth="86" text="Указатель 2" />
+        </columns>
+    </TableView>
+
+   <Button layoutX="153.0" layoutY="423.0" mnemonicParsing="false" onAction="#oneStep" text="step" />
+
+    <Label fx:id="timeLabel" layoutX="346.0" layoutY="426.0" prefHeight="18.0" prefWidth="54.0" text="0" />
+
+    <Label fx:id="stepLabel" layoutX="460.0" layoutY="426.0" prefHeight="18.0" prefWidth="54.0" text="0" />
+
+    <Label fx:id="denied" layoutX="460.0" layoutY="464.0" prefHeight="18.0" prefWidth="54.0" text="0" />
+
+    <TableView fx:id="table" layoutX="563.0" layoutY="14.0" maxHeight="500.0" maxWidth="200.0">
+        <columns>
+            <TableColumn fx:id="workerName" prefWidth="86" text="Имя " />
+            <TableColumn fx:id="workerElem" prefWidth="115.39998626708984" text="Элемент " />
+        </columns>
+    </TableView>
+    <Button layoutX="203.0" layoutY="423.0" mnemonicParsing="false" onAction="#tenSteps" text="ten steps" />
+</AnchorPane>

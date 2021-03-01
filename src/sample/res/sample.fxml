@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane alignment="center" hgap="10" vgap="10" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.Controller">
+   <columnConstraints>
+      <ColumnConstraints />
+   </columnConstraints>
+   <rowConstraints>
+      <RowConstraints />
+      <RowConstraints />
+   </rowConstraints>
+   <children>
+      <Button mnemonicParsing="false" text="Step mode" onAction="#stepModeBtnClick" />
+         <Button mnemonicParsing="false" text="Auto mode" GridPane.rowIndex="1" onAction="#autoModeBtnClick" fx:id="autoModeBtn" />
+      <Button mnemonicParsing="false" text="Graphs" GridPane.rowIndex="2" onAction="#graph1" />
+   </children>
+</GridPane>

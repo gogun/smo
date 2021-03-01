@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.controllers.AutoModeController">
+    <TableView fx:id="table" >
+        <columns>
+            <TableColumn fx:id="name" prefWidth="86" text="Имя" />
+            <TableColumn fx:id="createTime" prefWidth="86" text="Создано" />
+            <TableColumn fx:id="completeCount" prefWidth="86.0" text="Выполнено" />
+            <TableColumn fx:id="denied" prefWidth="86.0" text="Отклонено" />
+            <TableColumn fx:id="meanSystemTime" prefWidth="150.0" text="Ср. время в системе" />
+            <TableColumn fx:id="meanWaitTime" prefWidth="150.0" text="Ср. время ожидания" />
+            <TableColumn fx:id="meanCompletingTime" prefWidth="150.0" text="Ср. время обработки" />
+            <TableColumn fx:id="denyProbability" prefWidth="150.0" text="Вероятность отказа" />
+            <TableColumn fx:id="dispersion" prefWidth="150.0" text="Дисперсия" />
+        </columns>
+    </TableView>
+    <TableView fx:id="table2" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="300.0">
+        <columns>
+            <TableColumn fx:id="nameDevice" prefWidth="86" text="Имя" />
+            <TableColumn fx:id="coef" prefWidth="150" text="Коэф. использования" />
+        </columns>
+    </TableView>
+</AnchorPane>
